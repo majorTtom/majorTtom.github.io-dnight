@@ -1,0 +1,395 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>День-Ночь</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<style>
+		::-webkit-scrollbar-button {
+		background-image:url('');
+		background-repeat:no-repeat;
+		width:3px;
+		height:0px
+		}
+
+		::-webkit-scrollbar-track {
+		background-color:rgba(0, 0, 0, 0.2);
+		}
+
+		::-webkit-scrollbar-thumb {
+			-webkit-border-radius: 0px;
+			border-radius: 50px;
+			background-color: rgba(135, 126, 113, 1);		
+		}
+
+		::-webkit-resizer{
+		background-image:url('');
+		background-repeat:no-repeat;
+		width:3px;
+		height:0px
+		}
+
+		::-webkit-scrollbar{
+			width: 8px;
+			height: 10px;
+		}
+	</style>
+</head> 
+<body>
+
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__wrap">
+				<div class="header__item">
+					<a href="index.html" class="header__logo">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="header__item">
+					<a href="#" class="header__burger">
+						<span class="header__burger-stick"></span>
+					</a>
+				</div>
+				<div class="header__item">
+					<div class="header__number">
+						<a href='tel:+79383658877' class="header__number-item">+7 938 365 88 77</a>
+						<a href='tel:+79383655534' class="header__number-item">+7 938 365 55 34</a>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="header__window">
+			<div class="header__list">
+				<a href="index.html" class="header__link">Главная</a>
+				<a href="catalog.html" class="header__link">Виды Жалюзи</a>
+			</div>
+
+			<div class="header__background">
+				<div class="header__up">
+					<div class="header__up-item"></div>
+					<div class="header__up-item"></div>
+					<div class="header__up-item"></div>
+					<div class="header__up-item"></div>
+					<div class="header__up-item"></div>
+				</div>
+				<div class="header__down">
+					<div class="header__down-item"></div>
+					<div class="header__down-item"></div>
+					<div class="header__down-item"></div>
+					<div class="header__down-item"></div>
+					<div class="header__down-item"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- <section class="main" id="main">
+		<div class="container">
+			<div class="main__wrap">
+				<h1 class="main__h1">Фирма</h1>
+				<h2 class="main__h2">"День Ночь"</h2>
+				<h3 class="main__h3">КБР, г.Нальчик, ул.Щорса, д.64</h3>
+			</div>
+		</div>
+	</section> -->
+
+	<section id="first" class="first">
+		<div class="container">
+			<div class="first__wrap">
+				<div class="first__item">
+					<div class="first__text1">
+						<h1>Фирма</h1>
+						<h1>"День-Ночь"</h1>
+					</div>
+				</div>
+				<div class="first__item">
+					<div class="first__img-one"></div>
+				</div>
+				<div class="first__item">
+					<div class="first__img-two"></div>
+				</div>
+				<div class="first__item">
+					<div class="first__img-three"></div>
+				</div>
+				<div class="first__item">Установка жалюзи по КБР</div>
+			</div>
+			<div class="first__wrap-phone">
+				<div class="first__wrap-phone-title">
+					<h1>Установка Жалюзи по КБР</h1>
+				</div>
+				<div class="first__wrap-phone-img"></div>
+				<div class="first__wrap-phone-btn"> 
+					<a href="tel:+79389174314" target="_blank">Позвонить</a>
+				</div>
+				<div class="first__wrap-phone-info">
+					<p>пн-сб  -  с 09:00 до 22:00</br>вс  -  с 10:00 до 22:00</p>
+					<p>КБР, г.Нальчик,  ул.Щорса, д.64</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services" id="services">
+		<div class="services__trigger"></div>
+		<div class="container">
+			<div class="services__wrap">
+				<div class="services__item">
+					<h1 class="title services__title">Услуги</h1>
+					<div class="services__img-wrap">
+						<div class="services__img"></div>
+					</div>
+					<div class="services__mix-spots"></div>
+				</div>
+				<div class="services__item">
+					<div class="services__mix">
+						<div class="services__mix-background"></div>
+						<div class="services__mix-particles"></div>
+						<div class="services__mix-img"></div>
+						<div class="services__mix-svg">
+							<svg width="155" height="205" viewBox="0 0 155 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M153.962 185.618C146.962 185.618 132.762 185.318 131.962 184.118C131.907 184.174 131.842 184.235 131.771 184.302M110.462 174.118L110.462 179.118C109.662 180.318 110.462 180.951 110.962 181.118C116.796 182.618 128.662 185.618 129.462 185.618C130.173 185.618 131.2 184.828 131.771 184.302M110.462 174.118C103.296 165.451 88.3625 146.818 85.9625 141.618C80.7958 132.118 69.1625 112.518 63.9625 110.118C62.6291 109.451 58.4625 106.518 52.4625 100.118C50.4625 97.9513 46.6625 93.2179 47.4625 91.6179C45.7958 88.9513 42.8625 82.9179 44.4625 80.1179C44.6068 80.0217 44.7761 79.9137 44.9625 79.8005M110.462 174.118H110.962L112.963 176.118L120.463 148.618M51.4625 89.1179C51.4625 88.3179 49.7959 86.4513 48.9625 85.6179L48.4625 83.1179L49.4625 81.6179C49.4625 80.7846 49.2625 79.0179 48.4625 78.6179C47.778 78.2756 46.0683 79.1293 44.9625 79.8005M44.9625 79.8005C44.7959 77.7397 45.4625 73.6179 49.4625 73.6179C53.4625 73.6179 51.7959 75.6179 50.4625 76.6179L48.4625 78.1179M47.9625 73.1179C48.1292 71.1179 49.3625 67.5179 52.9625 69.1179C53.1292 70.2846 52.8626 72.7179 50.4625 73.1179M50.4625 68.6179C50.4625 66.7846 51.2625 63.3179 54.4625 64.1179C54.9625 64.9512 55.3625 67.0179 52.9625 68.6179M63.4625 89.6179C63.4625 88.9513 63.3625 86.6179 62.9625 82.6179C62.4625 77.6179 58.4625 76.1179 58.4625 75.6179C58.4625 75.1179 56.4625 72.1179 55.9625 70.1179C55.5625 68.5179 57.1292 67.4513 57.9625 67.1179C58.9625 68.6179 61.5625 71.7179 63.9625 72.1179C66.3625 72.5179 68.2959 77.9513 68.9625 80.6179C70.4625 81.9513 73.4625 85.0179 73.4625 86.6179M73.4625 87.1179C75.6292 89.9513 79.8625 96.2179 79.4625 98.6179L90.4625 114.618L101.963 129.618L114.463 142.618L120.463 148.118L139.963 155.618M139.963 155.618C141.129 155.451 143.663 154.418 144.463 151.618L154.463 148.118M139.963 155.618C139.796 159.451 139.163 167.518 137.963 169.118L131.771 184.302M58.9625 78.1179C56.9625 80.2846 52.9625 85.0179 52.9625 86.6179M55.9625 76.6179C56.2959 77.1179 57.0625 78.1179 57.4625 78.1179C57.9625 78.1179 57.9625 78.6179 57.9625 77.1179C57.9625 75.9179 56.6292 74.9513 55.9625 74.6179M45.4625 87.1179C46.4625 87.1179 48.4625 86.9179 48.4625 86.1179M50.4625 89.1179C50.6292 89.6179 50.4625 91.0179 48.4625 92.6179M60.4625 85.6179C59.9625 87.4513 58.5625 91.3179 56.9625 92.1179C55.3625 92.9179 52.9625 95.7846 51.9625 97.1179M66.9625 99.1179C65.6292 97.6179 62.9625 94.2179 62.9625 92.6179M61.9625 98.6179L62.9625 102.118L66.4625 99.6179C66.6292 100.785 67.4625 103.418 69.4625 104.618M63.4625 85.6179C64.1292 85.9513 66.2625 86.7179 69.4625 87.1179M63.9625 78.6179C63.835 79.1179 63.4566 80.1179 62.9625 80.1179M71.9625 105.118C70.7959 106.785 68.2625 110.118 67.4625 110.118M73.4625 107.118C72.4625 108.618 70.2625 111.718 69.4625 112.118" stroke="white"/>
+								<path d="M2.1194 37.348V40.777L125.571 49.3497V44.8919L3.14816 37.348M2.1194 56.8936V60.6655C42.8126 63.4088 124.336 68.6895 124.885 67.8666C125.434 67.0436 125.114 65.009 124.885 64.0946L3.14816 56.8936M2.1194 95.9848V97.0135M2.1194 97.0135V101.471L121.113 104.9V101.128L2.1194 97.0135ZM1.43356 177.939C1.20494 179.539 0.884884 182.74 1.43356 182.74C1.98223 182.74 83.163 182.054 120.427 182.054L119.055 178.968L2.1194 177.939M2.1194 1L129 9.57264V12.3159L2.1194 1ZM2.1194 17.1166L126.942 26.7179V30.147L2.1194 17.1166ZM2.1194 77.125L3.14816 81.9257L123.513 84.6689L124.199 81.2399L2.1194 77.125ZM2.1194 116.902V122.046L119.398 122.731L120.427 119.988L2.1194 116.902ZM2.1194 136.791V143.306H117.684L116.998 139.534L2.1194 136.791ZM1.43356 156.679C0.862022 158.622 0.404795 162.508 3.14816 162.508C5.89152 162.508 83.9631 161.48 118.712 161.48L117.684 156.336L1.43356 156.679ZM1.43356 197.485L2.1194 204L120.427 202.628L121.113 197.828L1.43356 197.485Z" stroke="white" stroke-opacity="0.7"/>
+								<path d="M127.5 2L57 67M57 67L55 66.5L53.5 69L53 72L55 72.5V69.5L57 67Z" stroke="white"/>
+							</svg>
+
+						</div>
+					</div>
+
+					<p class="services__text animate__up">
+						Все виды жалюзи в Нальчике и КБР!
+						У нас Вы подберёте и сможете купить лучшие варианты жалюзи на пластиковые окна, для своего интерьера - на кухню, балкон и комнату, на любой вкус!
+					</p>
+
+					<a href="catalog.html" class="services__button animate__right">
+						<span class="services__btn-text">Посмотреть работы</span>
+						<span class="services__arrow"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="positive" id="positive">
+		<div class="container">
+			<div class="positive__wrap">
+				<div class="positive__item">
+					<div class="positive__list">
+						<div class="positive__list-item">
+							<h1 class="positive__number animate__up">01</h1>
+							<span class="positive__line animate__up"></span>
+							<h3 class="positive__info animate__up">Быстро и качественно</h3>
+						</div>
+						<div class="positive__list-item">
+							<h1 class="positive__number animate__up">02</h1>
+							<span class="positive__line animate__up"></span>
+							<h3 class="positive__info animate__up">Гарантия 1 год</h3>
+						</div>
+						<div class="positive__list-item">
+							<h1 class="positive__number animate__up">03</h1>
+							<span class="positive__line animate__up"></span>
+							<h3 class="positive__info animate__up">Выезд замерщика-дизайнера по КБР</h3>
+						</div>
+						<div class="positive__list-item">
+							<h1 class="positive__number animate__up">04</h1>
+							<span class="positive__line animate__up"></span>
+							<h3 class="positive__info animate__up">Установка бесплатно</h3>
+						</div>
+					</div>
+				</div>
+				<div class="positive__item">
+					<h1 class="title positive__title">Почему у нас?</h1>
+					<div class="positive__mix">
+						<div class="positive__background"></div>
+						<div class="positive__background2"></div>
+						<div class="positive__circles"></div>
+						<div class="positive__circles2"></div>
+						<div class="positive__img"></div>
+						<div class="positive__spots"></div>
+						<div class="positive__svg">
+							<svg width="275" height="292" viewBox="0 0 275 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M271 65L6 75V65H271Z" stroke="white" stroke-opacity="0.62"/>
+								<path d="M4.17778 223.988L270.822 131.847V123.759L1 216.189V223.988M4.17778 150.333L274 97.1853V89.0976L4.17778 141.667V150.333ZM9.66667 291L274 160.731L267.067 154.088L4.17778 285.512L9.66667 291ZM4.17778 7.64343C6.72 7.64343 185.119 23.0485 274 30.751L270.822 23.8187L4.17778 1V7.64343Z" stroke="white" stroke-opacity="0.62"/>
+								<path d="M190.218 266C189.375 262.552 188.531 253.589 191.905 245.314C192.116 242.289 191.694 235.098 188.32 230.539C184.103 224.84 181.572 171.859 180.518 171.437C179.463 171.015 169.299 168.862 160.695 163.627C149.94 157.084 143.192 149.907 140.872 149.907C138.552 149.907 109.24 134.498 109.662 129.433C110.083 124.367 110.505 120.145 118.519 120.145C124.929 120.145 131.453 123.522 133.913 125.211L148.675 134.076C151.838 131.614 156.73 124.536 150.994 115.924C143.824 105.159 144.035 105.159 143.403 101.992C142.77 98.8263 129.695 88.2724 128.219 86.3727C126.743 84.473 109.451 73.2858 105.866 72.0194C102.281 70.7529 87.7299 66.1092 93.6346 56.8218C94.689 55.9071 97.4726 54.4999 100.172 56.1885C102.871 57.8772 133.491 68.0089 133.491 68.0089M93.4237 65.2649C90.4011 64.7724 84.7354 62.6475 86.2538 58.0882C86.8161 56.2589 89.0374 52.6846 93.4237 53.0223C98.9066 53.4445 117.464 55.5553 119.995 56.1885C122.525 56.8218 125.478 58.7215 136.022 59.9879C138.623 61.8876 144.963 67.0802 149.518 72.6526C155.212 79.6182 162.593 88.2724 168.286 91.8607C169.2 92.3532 171.45 94.5625 173.137 99.4595L183.259 113.813C192.116 124.859 209.914 146.994 210.252 147.163C210.674 147.374 212.993 149.696 217 160.039M161.327 130.699C159.851 130.347 156.519 130.868 155.001 135.765M166.178 137.242C165.441 137.328 164.408 137.426 163.436 137.481M160.695 137.242C160.695 137.545 161.997 137.561 163.436 137.481M165.756 135.765C164.983 135.924 163.436 136.489 163.436 137.481M136.443 130.699C137.006 133.865 136.739 140.831 131.171 143.364M140.872 135.765C141.153 137.946 140.661 142.984 136.443 145.686M117.675 66.5314C115.847 67.3874 112.319 69.8101 112.825 72.6526M134.967 76.8742C135.389 79.196 134.925 84.0086 129.695 84.6841M202.238 174.814C198.617 173.3 192.202 171.014 187.055 170.168M180.518 170.382C181.926 169.677 184.31 169.718 187.055 170.168M187.055 170.168C190.991 173.828 198.696 182.075 198.021 185.79C197.177 190.434 217 236.871 217 233.705" stroke="white"/>
+							</svg>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="years" id="years">
+		<div class="years__background"></div>
+		<div class="container">
+			<div class="years__wrap">
+				<h1 class="years__title animate__up">Day - Night</h1>
+				<h4 class="years__text animate__up">
+					Работаем более 15 лет
+				</h4>
+				<h4 class="years__text years__text2 animate__up">
+					Приглашаем к сотрудничеству дилеров
+				</h4>
+
+				<div class="years__title2 animate__up animate__no-hide">windows blind</div>
+				<div class="years__img"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="process" id="process">
+		<div class="container">
+			<div class="process__wrap">
+				<div class="process__item">
+					<div class="process__mix">
+						<div class="process__background"></div>
+						<div class="process__background2"></div>
+						<div class="process__img-main"></div>
+						<div class="process__svg">
+							<svg width="693" height="1104" viewBox="0 0 693 1104" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M231.027 174C166.36 177.5 49.6268 203.2 100.027 278C150.427 352.8 121.027 426.5 100.027 454C56.3602 480.333 -22.8732 545 9.52685 593C41.9269 641 37.0269 719.333 30.5269 752.5M214.527 261C185.527 279.333 136.227 331 171.027 391C214.527 466 201.527 517 171.027 555C140.527 593 80.0269 624 125.527 663.5C171.027 703 229.527 775.5 214.527 823.5C202.527 861.9 220.527 900.833 231.027 915.5C247.694 948 262.927 1030.8 190.527 1102M692.027 2C632.36 6 518.127 33.6 538.527 112C564.027 210 461.027 247.5 368.027 247.5C275.027 247.5 255.527 420.5 285.527 454C315.527 487.5 421.027 654 326.027 674C231.027 694 235.027 845.5 270.027 880.5C298.027 908.5 319.027 996.833 326.027 1037.5" stroke="white" stroke-opacity="0.8" stroke-width="3"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="process__item">
+					<div class="title process__title">Процесс</div>
+					<div class="process__list">
+						<div class="process__list-item animate__up animate__no-hide">
+							<div class="process__list-text">
+								<h3 class="process__h3 ">ШАГ 1</h3>
+								<h4 class="process__info ">Проконсультируем вас по ценам и другим вопросам</h4>
+							</div>
+							<div class="process__img"></div>
+						</div>
+						<div class="process__list-item animate__up animate__no-hide">
+							<div class="process__list-text">
+								<h3 class="process__h3 ">ШАГ 2</h3>
+								<h4 class="process__info ">Приедем, замерим и рассчитаем точную стоимость</h4>
+							</div>
+
+							<div class="process__img"></div>
+						</div>
+						<div class="process__list-item animate__up animate__no-hide">
+							<div class="process__list-text">
+								<h3 class="process__h3 ">ШАГ 3</h3>
+								<h4 class="process__info ">Установим готовые жалюзи в удобное для вас время</h4>
+							</div>
+
+							<div class="process__img"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="catalog" id="catalog">
+		<div class="catalog__beyond">
+			<svg width="100%" height="998" viewBox="0 0 1440 998" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0 185.916C45.8866 133.91 179.677 44.1991 347.745 101.406C557.83 172.914 298 354 710.5 301.5C1123 249 1431.25 663.411 1467 997.05" stroke="white" stroke-opacity="0.5" stroke-width="4"/>
+				<path d="M0 407.5C208.5 345 246 515.5 618 750C1043.5 923.5 888.5 258.5 1036.5 118C1152.7 7.68649 1316 140.002 1440.5 1.00201" stroke="white" stroke-opacity="0.5" stroke-width="3"/>
+			</svg>
+
+			<p class="catalog__text">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, vero illo obcaecati voluptas natus animi id. Repellat, consequatur. Quia labore maiores, dolores eum expedita omnis tempora esse sunt? Aliquam perspiciatis cumque sequi? Ullam autem, quibusdam illo quod. Ducimus eveniet dolorem quo aliquam praesentium cumque lorem quo aliquam praesentium cumque maiores, numquam animi, vLorem, ipsum dolor sit amet consectetur adipisicing elit. Error, vero illo obcaecati voluptas natus animi id. Repellat, consequatur. Quia labore maiores, dolores eum expedita omnis tempora esse sunt? Aliquam perspiciatis cumque sequi? Ullam autem, quibusdam illo quod. Ducimus eveniet dolorem quo aliquam praesentium cumque lorem quo aliquamLorem, ipsum dolor sit amet consectetur adipisicing elit. Error, vero illo obcaecati voluptas natus animi id. Repellat, consequatur. Quia labore maiores, dolores eum expedita omnis tempora esse sunt? Aliquam perspiciatis cumque sequi? Ullam autem, quibusdam illo quod. Ducimus eveniet dolorem quo aliquam praesentium cumque lorem quo aliquam praesentium cumque maiores, numquam animi, vLorem, ipsum dolor sit amet consectetur adipisicing elit. Error, vero illo obcaecati voluptas natus animi id. Repellat, consequatur. Quia labore maiores, dolores eum expedita omnis tempora esse sunt? Aliquam perspiciatis cumque sequi? Ullam autem, quibusdam illo quod. Ducimus eveniet dolorem quo aliquam praesentium cumque lorem quo aliquam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, vero illo obcaecati voluptas natus animi id. Repellat, consequatur. Quia labore maiores, dolores eum expedita omnis tempora esse sunt? Aliquam perspiciatis cumque sequi? Ullam autem, quibusdam illo quod. Ducimus eveniet dolorem quo aliquam praesentium cumque lorem quo aliquam praesentium cumque  praesentium cumque lorem quo aliquam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, vero illo obcaecati voluptas natus
+			</p>
+		</div>
+		<div class="container">
+			<div class="catalog__wrap">
+				<div class="catalog__item">
+					<div class="catalog__img animate__left"></div>
+					
+					<div class="title catalog__title animate__left">Виды жалюзи</div>
+					<div class="catalog__img-other animate__left"></div>
+					<div class="catalog__img-other2 animate__left"></div>
+				</div>
+				<div class="catalog__item">
+					<nav class="catalog__nav">
+						<ul>
+							<a href="#">
+								<li class='animate__up'>
+									Вертикальные
+								</li>
+							</a>
+							<a href="#">
+								<li class='animate__up'>
+									Горизонтальные
+								</li>
+							</a>
+							<a href="#">
+								<li class='animate__up'>
+									Фотожалюзи
+								</li>
+							</a>
+							<a href="#">
+								<li class='animate__up'>
+									Мультфактурные
+								</li>
+							</a>
+							<a href="#">
+								<li class='animate__up'>
+									“День - Ночь” и “Зебра”
+								</li>
+							</a>
+							<a href="#">
+								<li class='animate__up'>
+									Рулонные шторы
+								</li>
+							</a>
+							<a href="#">
+								<li class='animate__up'>
+									Римские шторы
+								</li>
+							</a>
+							<a href="#">
+								<li class='animate__up'>
+									Рольставни
+								</li>
+							</a>							
+						</ul>
+					</nav>
+				</div>
+				<div class="catalog__item">
+					<a href='catalog.html' class="catalog__button-wrap">
+						<span class="catalog__button"></span>
+						<span class="catalog__btn-text">Посмотреть</span>
+						<span class="catalog__arrow"></span>
+					</a>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+	<section class="panel map" id="map">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0588050bb864b4341254fc57f14bf817f08555dab8bdddfc49abfecd43dc8215&amp;source=constructor" width="100%" height="580" frameborder="0"></iframe>
+	</section>
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__wrap">
+				<h1 class="footer__h1">Фирма</h1>
+				<h2 class="footer__h2">"День Ночь"</h2>
+				<h3 class="footer__h3">КБР, г.Нальчик, ул.Щорса, д.64</h3>
+			</div>
+		</div>
+	</footer>
+
+
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
+
+
+

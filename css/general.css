@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url("../fonts/CenturyGothic.eot");
+  src: url("../fonts/CenturyGothic.eot?iefix") format("eot"), url("../fonts/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic.ttf") format("truetype"), url("../fonts/CenturyGothic.svg#CenturyGothic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url("../fonts/CenturyGothic-Bold.eot");
+  src: url("../fonts/CenturyGothic-Bold.eot?iefix") format("eot"), url("../fonts/CenturyGothic-Bold.woff") format("woff"), url("../fonts/CenturyGothic-Bold.ttf") format("truetype"), url("../fonts/CenturyGothic-Bold.svg#CenturyGothic") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+/*$gray: #36332E;
+$milk: #F2EC62;
+$red: #EF5252;*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Comfortaa', cursive;
+  background-color: #F8F0E6;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+  /*  max-width: 100%;*/
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.header {
+  /* .header__item */
+  /* .header__wrap */
+  /* .header__logo */
+  /* .header__burger-active */
+  /* .header__burger */
+  /* .header__burger-stick */
+  /* .header__number */
+  /* .header__number-item */
+  /* .header__window-active */
+  /* .header__window */
+  /* .header__list */
+  /* .header__link */
+  /* .header__background */
+  /* .header__up */
+  /* .header__up-item */
+  /* .header__down */
+  /* .header__down-item */
+}
+.header__item {
+  z-index: 8;
+  position: relative;
+}
+.header__item:first-child {
+  display: none;
+}
+.header__item:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.header__item:last-child {
+  display: none;
+}
+.header__wrap {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin: 40px auto;
+  justify-content: center;
+}
+.header__logo img {
+  padding-left: 40px;
+}
+.header__burger-active {
+  border: 1px solid #fff !important;
+}
+.header__burger-active span {
+  height: 0 !important;
+  background-color: #fff  !important;
+}
+.header__burger-active span:before, .header__burger-active span:after {
+  width: 30px !important;
+  height: 1px;
+  background-color: #fff !important;
+  display: block;
+  content: "";
+  position: absolute;
+  transition: .5s ease;
+}
+.header__burger-active span:before {
+  top: calc(46px - (70px / 2)) !important;
+  transform: rotate(45deg);
+}
+.header__burger-active span:after {
+  transform: rotate(-45deg);
+  top: calc(46px - (70px / 2)) !important;
+}
+.header__burger-active:hover span {
+  /*&:before{
+    width: 50px !important;
+  }
+  &:after{ 
+    width: 50px !important;
+  }*/
+}
+.header__burger {
+  width: 50px;
+  border: 1px solid #837E7E;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  transition: 1s ease;
+  text-align: center;
+  text-align: -webkit-center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 8;
+}
+.header__burger span {
+  width: 30px;
+  margin: -9px auto;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #837E7E;
+  display: block;
+  content: "";
+  position: absolute;
+  /*transition: .5s ease;*/
+}
+.header__burger span:before, .header__burger span:after {
+  width: 30px;
+  height: 1px;
+  background-color: #837E7E;
+  display: block;
+  content: "";
+  position: absolute;
+  transition: 1s ease;
+}
+.header__burger span:before {
+  width: 15px;
+  top: 12px;
+  left: 0;
+  /*right: -17px;*/
+}
+.header__burger span:after {
+  width: 25px;
+  right: 0;
+  top: calc(46px - (70px / 3));
+}
+.header__burger:hover span {
+  transition: .5s ease;
+  width: 30px;
+}
+.header__burger:hover span:before {
+  width: 30px;
+}
+.header__burger:hover span:after {
+  width: 30px;
+}
+.header__burger-stick {
+  top: calc(70px/3);
+}
+.header__number {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding-right: 40px;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  transition: .5s ease;
+}
+.header__number a {
+  color: #fff;
+  transition: .5s ease;
+}
+.header__number a:last-child {
+  position: absolute;
+  opacity: 0;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: #837E7E;
+}
+.header__number:hover a:last-child {
+  opacity: 1;
+  transform: translateY(30px);
+}
+.header__window-active {
+  display: block !important;
+  transform: translateY(0) !important;
+}
+.header__window-active .header__link {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.header__window-active .header__up {
+  transform: translateY(0);
+}
+.header__window-active .header__down {
+  transform: translateY(0);
+}
+.header__window {
+  z-index: 6;
+  transform: translateY(-100%);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  position: absolute;
+  /*background-color: $gray;*/
+}
+.header__list {
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__link {
+  transform: translate(0, 100%);
+  opacity: 0;
+  font-family: 'Philosopher', 'Monrserrat', 'Arial', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 2s ease;
+  font-size: 100px;
+}
+.header__link:hover {
+  font-style: italic;
+}
+.header__background {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.header__up {
+  transform: translateY(100%);
+  transition: 1s ease;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  left: 0px;
+}
+.header__up-item {
+  width: 10%;
+  background-color: #837E7E;
+  display: block;
+  height: 100vh;
+  margin-right: 10%;
+}
+.header__down {
+  transform: translateY(-100%);
+  transition: 1s ease;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  left: 10%;
+}
+.header__down-item {
+  width: 10%;
+  background-color: #837E7E;
+  display: block;
+  height: 100vh;
+  margin-right: 10%;
+}
+
+.footer {
+  font-family: 'Century Gothic', 'Monrserrat', 'Arial', sans-serif;
+  background-color: #837E7E;
+  padding-bottom: 70px;
+  /* .footer__wrap */
+  /* .footer__h1 */
+  /* .footer__h2 */
+  /* .footer__h3 */
+}
+.footer__wrap {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.footer__h1 {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 147px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.footer__h2 {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 75px;
+  line-height: 92px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.footer__h3 {
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  /*line-height: 22px;*/
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.30em;
+  text-transform: capitalize;
+  margin-top: 20px;
+  color: #FFFFFF;
+}
